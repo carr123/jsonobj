@@ -986,5 +986,3 @@ func (j *JSONOBJ) VerifyEmail(key string) error {
 
 	return nil
 }
-
-//-------------------------------------------------------------------------
