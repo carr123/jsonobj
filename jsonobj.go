@@ -555,6 +555,12 @@ func (j *JSONOBJ) MustString(args ...string) string {
 	return def
 }
 
+func (j *JSONOBJ) MustStringTrimSpace(args ...string) string {
+	out := j.MustString(args...)
+	out = strings.TrimSpace(out)
+	return out
+}
+
 func (j *JSONOBJ) MustInt64(args ...int64) int64 {
 	var def int64
 
